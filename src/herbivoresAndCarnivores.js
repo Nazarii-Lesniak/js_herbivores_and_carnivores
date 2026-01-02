@@ -36,7 +36,6 @@ class Carnivore extends Animal {
     }
 
     target.health -= Animal.BITE_DAMAGE;
-    delete target.hidden;
 
     Animal.alive = Animal.alive.filter(
       (animal) => animal.health > Animal.DEATH_THRESHOLD,
